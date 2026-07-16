@@ -207,6 +207,18 @@ h1, h2, h3, h4 { font-family: var(--font-display); font-weight: 700; line-height
     url('../assets/photos/menu/page_banner.webp') center/cover no-repeat,
     var(--charcoal);
 }
+.page-banner--events {
+  background:
+    linear-gradient(rgba(16,11,9,.55), rgba(16,11,9,.68)),
+    url('../assets/photos/events/banner_events.webp') center/cover no-repeat,
+    var(--charcoal);
+}
+.page-banner--our-story {
+  background:
+    linear-gradient(rgba(16,11,9,.55), rgba(16,11,9,.68)),
+    url('../assets/photos/our_story/banner_our_story.webp') center/cover no-repeat,
+    var(--charcoal);
+}
 .page-banner h1 { color: var(--cream); font-size: clamp(2rem, 5vw, 3.2rem); }
 .page-banner p { color: rgba(247,241,231,.82); margin-top: 10px; max-width: 560px; margin-left: auto; margin-right: auto; }
 
@@ -224,6 +236,14 @@ h1, h2, h3, h4 { font-family: var(--font-display); font-weight: 700; line-height
 .feature__icon { font-size: 1.7rem; width: 54px; height: 54px; display: grid; place-items: center; background: var(--cream-2); border-radius: 12px; margin-bottom: 16px; }
 .feature h3 { font-size: 1.28rem; margin-bottom: 8px; }
 .feature p { color: var(--muted); }
+
+/* Photo variant — image bleeds to the card edges, body keeps the normal padding */
+.feature--photo { padding: 0; overflow: hidden; }
+.feature__photo { width: 100%; height: 180px; object-fit: cover; display: block; }
+.feature__photo.is-fallback { object-fit: contain; padding: 30px; background: var(--cream-2); opacity: .85; }
+.feature__body { padding: 24px 26px; }
+.feature__body h3 { font-size: 1.28rem; margin-bottom: 8px; }
+.feature__body p { color: var(--muted); }
 
 /* ---------- CTA band ---------- */
 .cta-band {
