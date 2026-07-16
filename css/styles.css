@@ -331,7 +331,7 @@ h1, h2, h3, h4 { font-family: var(--font-display); font-weight: 700; line-height
 
 /* ---------- Footer ---------- */
 .site-footer { background: var(--charcoal); color: rgba(247,241,231,.8); padding: 56px 0 30px; }
-.footer-grid { display: grid; grid-template-columns: 1.4fr 1fr 1fr; gap: 40px; }
+.footer-grid { display: grid; grid-template-columns: 1.6fr 1fr; gap: 40px; }
 @media (max-width: 780px) { .footer-grid { grid-template-columns: 1fr; gap: 30px; } }
 .site-footer h4 { color: var(--cream); font-size: 1.05rem; margin-bottom: 14px; letter-spacing: .02em; }
 .site-footer a { color: rgba(247,241,231,.8); }
@@ -358,6 +358,29 @@ h1, h2, h3, h4 { font-family: var(--font-display); font-weight: 700; line-height
 /* fallback logo tint if a photo file is missing */
 .gallery__item img.is-fallback { object-fit: contain; padding: 22px; filter: invert(1) sepia(1) saturate(.35) brightness(1.12); opacity: .85; }
 .split--media img.is-fallback { filter: invert(1) sepia(1) saturate(.35) brightness(1.12); }
+
+/* ---------- Photo lightbox ---------- */
+/* Hidden by default; JS toggles .is-open when a gallery/menu photo is clicked. */
+.lightbox {
+  display: none;
+  position: fixed; inset: 0; z-index: 300;
+  align-items: center; justify-content: center;
+  background: rgba(10,6,5,.92);
+  padding: 40px;
+}
+.lightbox.is-open { display: flex; }
+.lightbox__img { max-width: 100%; max-height: 88vh; border-radius: 10px; box-shadow: var(--shadow-lg); }
+.lightbox__close {
+  position: absolute; top: 22px; right: 26px;
+  width: 44px; height: 44px; border-radius: 50%; border: 0;
+  background: rgba(247,241,231,.14); color: var(--cream);
+  font-size: 1.9rem; line-height: 1; cursor: pointer;
+  display: flex; align-items: center; justify-content: center;
+  transition: background .15s ease;
+}
+.lightbox__close:hover { background: rgba(247,241,231,.26); }
+.gallery__item img, .menu-item__photo img { cursor: zoom-in; }
+.gallery__item img.is-fallback, .menu-item__photo img.is-fallback { cursor: default; }
 
 /* ---------- Today's Special board ---------- */
 /* Never render until JS has populated it (guards against stale/half-loaded JS) */
