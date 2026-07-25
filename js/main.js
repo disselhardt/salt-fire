@@ -57,13 +57,13 @@ document.addEventListener('DOMContentLoaded', function () {
   // One entry per weekday. To hide the board on a given day, leave
   // the name blank ("") or delete that day's line.
   // ---------------------------------------------------------------
-  // ⭐ SPECIAL OF THE WEEK: "The Dion" runs every day. Edit desc/price
-  // below as needed. When the week's over, delete the DION lines and
+  // ⭐ SPECIAL OF THE WEEK: "Cluck This!" runs every day. Edit desc/price
+  // below as needed. When the week's over, delete the SPECIAL lines and
   // un-comment the day-by-day lineup underneath.
-  var DION = { name: "The Dion", desc: "Smoked pork roast, hatch chiles, pepper jack, chipotle aioli.", price: "$17", photo: "assets/photos/specials/special_03.webp" };
+  var SPECIAL = { name: "Cluck This!", desc: "BBQ chicken leg, Southern green beans, potato salad.", price: "$20", photo: "assets/photos/specials/special_04.webp" };
   var SPECIALS = {
-    sunday: DION, monday: DION, tuesday: DION, wednesday: DION,
-    thursday: DION, friday: DION, saturday: DION
+    sunday: SPECIAL, monday: SPECIAL, tuesday: SPECIAL, wednesday: SPECIAL,
+    thursday: SPECIAL, friday: SPECIAL, saturday: SPECIAL
   };
   /* Day-by-day lineup — restore after The Dion's week:
   var SPECIALS = {
@@ -115,7 +115,8 @@ document.addEventListener('DOMContentLoaded', function () {
     { src: 'assets/photos/menu/wings.webp', alt: 'Toshi Wings' },
     { src: 'assets/photos/menu/cody.webp', alt: 'The Cody crispy chicken sandwich' },
     { src: 'assets/photos/menu/halo.webp', alt: 'The Halo smoked chicken salad sandwich' },
-    { src: 'assets/photos/menu/james_menu.webp', alt: 'Smoked burger' }
+    { src: 'assets/photos/menu/james_menu.webp', alt: 'Smoked burger' },
+    { src: 'assets/photos/specials/special_03.webp', alt: 'The Dion — smoked pork roast with hatch chiles' }
   ];
   var galleryGrid = document.querySelector('.gallery');
   if (galleryGrid) {
