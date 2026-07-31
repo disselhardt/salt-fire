@@ -65,6 +65,15 @@ document.addEventListener('DOMContentLoaded', function () {
     sunday: SPECIAL, monday: SPECIAL, tuesday: SPECIAL, wednesday: SPECIAL,
     thursday: SPECIAL, friday: SPECIAL, saturday: SPECIAL
   };
+  // Weekly Meals page: the big "Good Food Waiting For You" photo always
+  // shows the current special of the week — updates automatically when
+  // SPECIAL above is edited. (Falls back to the logo if the photo 404s.)
+  var weeklyPhoto = document.getElementById('weekly-special-photo');
+  if (weeklyPhoto && SPECIAL && SPECIAL.photo) {
+    weeklyPhoto.src = SPECIAL.photo;
+    weeklyPhoto.alt = "This week's special: " + SPECIAL.name;
+  }
+
   /* Day-by-day lineup — restore after The Dion's week:
   var SPECIALS = {
     sunday:    { name: "Smoked Prime Rib Dip",   desc: "House-smoked prime rib, melted provolone, horseradish cream, au jus on a griddled roll.", price: "$19" },

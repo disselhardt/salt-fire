@@ -219,6 +219,12 @@ h1, h2, h3, h4 { font-family: var(--font-display); font-weight: 700; line-height
     url('../assets/photos/our_story/banner_our_story.webp') center/cover no-repeat,
     var(--charcoal);
 }
+.page-banner--visit {
+  background:
+    linear-gradient(rgba(16,11,9,.55), rgba(16,11,9,.68)),
+    url('../assets/photos/visit/banner_visit.webp') center/cover no-repeat,
+    var(--charcoal);
+}
 .page-banner h1 { color: var(--cream); font-size: clamp(2rem, 5vw, 3.2rem); }
 .page-banner p { color: rgba(247,241,231,.82); margin-top: 10px; max-width: 560px; margin-left: auto; margin-right: auto; }
 
@@ -328,6 +334,9 @@ h1, h2, h3, h4 { font-family: var(--font-display); font-weight: 700; line-height
     url('../assets/photos/home/story_panel.webp') center/cover no-repeat,
     linear-gradient(145deg, var(--burgundy), var(--charcoal));
 }
+/* Full-bleed photo panel (Our Story) — real photo fills the card, no logo treatment */
+.split--media--photo { padding: 0; }
+.split--media--photo img:not(.is-fallback) { width: 100%; height: 100%; object-fit: cover; filter: none; }
 
 .prose p { margin-bottom: 16px; color: var(--ink); }
 .prose p.lead { font-size: 1.15rem; }
