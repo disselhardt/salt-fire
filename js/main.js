@@ -116,7 +116,9 @@ document.addEventListener('DOMContentLoaded', function () {
     { src: 'assets/photos/menu/cody.webp', alt: 'The Cody crispy chicken sandwich' },
     { src: 'assets/photos/menu/halo.webp', alt: 'The Halo smoked chicken salad sandwich' },
     { src: 'assets/photos/menu/james_menu.webp', alt: 'Smoked burger' },
-    { src: 'assets/photos/specials/special_03.webp', alt: 'The Dion — smoked pork roast with hatch chiles' }
+    { src: 'assets/photos/specials/special_03.webp', alt: 'The Dion — smoked pork roast with hatch chiles' },
+    { src: 'assets/photos/menu/lewis.webp', alt: 'The Lewis sandwich' },
+    { src: 'assets/photos/menu/lfg_burger.webp', alt: 'L.F.G. Burger' }
   ];
   var galleryGrid = document.querySelector('.gallery');
   if (galleryGrid) {
