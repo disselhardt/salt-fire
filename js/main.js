@@ -57,10 +57,10 @@ document.addEventListener('DOMContentLoaded', function () {
   // One entry per weekday. To hide the board on a given day, leave
   // the name blank ("") or delete that day's line.
   // ---------------------------------------------------------------
-  // ⭐ SPECIAL OF THE WEEK: "Cluck This!" runs every day. Edit desc/price
+  // ⭐ SPECIAL OF THE WEEK: "The #31" runs every day. Edit desc/price
   // below as needed. When the week's over, delete the SPECIAL lines and
   // un-comment the day-by-day lineup underneath.
-  var SPECIAL = { name: "Cluck This!", desc: "BBQ chicken leg, Southern green beans, potato salad.", price: "$20", photo: "assets/photos/specials/special_04.webp" };
+  var SPECIAL = { name: "The #31", desc: "Maple mustard pork tenderloin, bacon-fig jam, black pepper mascarpone. Served with chips or tater salad.", price: "$18", photo: "assets/photos/specials/special_05.webp" };
   var SPECIALS = {
     sunday: SPECIAL, monday: SPECIAL, tuesday: SPECIAL, wednesday: SPECIAL,
     thursday: SPECIAL, friday: SPECIAL, saturday: SPECIAL
@@ -127,7 +127,8 @@ document.addEventListener('DOMContentLoaded', function () {
     { src: 'assets/photos/menu/james_menu.webp', alt: 'Smoked burger' },
     { src: 'assets/photos/specials/special_03.webp', alt: 'The Dion — smoked pork roast with hatch chiles' },
     { src: 'assets/photos/menu/lewis.webp', alt: 'The Lewis sandwich' },
-    { src: 'assets/photos/menu/lfg_burger.webp', alt: 'L.F.G. Burger' }
+    { src: 'assets/photos/menu/lfg_burger.webp', alt: 'L.F.G. Burger' },
+    { src: 'assets/photos/specials/special_04.webp', alt: 'Cluck This! — BBQ chicken leg plate' }
   ];
   var galleryGrid = document.querySelector('.gallery');
   if (galleryGrid) {
