@@ -411,8 +411,8 @@ h1, h2, h3, h4 { font-family: var(--font-display); font-weight: 700; line-height
   transition: background .15s ease;
 }
 .lightbox__close:hover { background: rgba(247,241,231,.26); }
-.gallery__item img, .menu-item__photo img { cursor: zoom-in; }
-.gallery__item img.is-fallback, .menu-item__photo img.is-fallback { cursor: default; }
+.gallery__item img, .menu-item__photo img, .special-board__photo img, #weekly-special-photo { cursor: zoom-in; }
+.gallery__item img.is-fallback, .menu-item__photo img.is-fallback, #weekly-special-photo.is-fallback { cursor: default; }
 
 /* ---------- Today's Special board ---------- */
 /* Never render until JS has populated it (guards against stale/half-loaded JS) */

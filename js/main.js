@@ -202,7 +202,7 @@ document.addEventListener('DOMContentLoaded', function () {
   document.addEventListener('keydown', function (e) {
     if (e.key === 'Escape' && lightbox.classList.contains('is-open')) closeLightbox();
   });
-  document.querySelectorAll('.gallery__item img, .menu-item__photo img').forEach(function (img) {
+  document.querySelectorAll('.gallery__item img, .menu-item__photo img, .special-board__photo img, #weekly-special-photo').forEach(function (img) {
     img.addEventListener('click', function () {
       if (img.classList.contains('is-fallback')) return;
       openLightbox(img.currentSrc || img.src, img.alt);
