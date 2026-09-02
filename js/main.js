@@ -57,10 +57,13 @@ document.addEventListener('DOMContentLoaded', function () {
   // One entry per weekday. To hide the board on a given day, leave
   // the name blank ("") or delete that day's line.
   // ---------------------------------------------------------------
-  // ⭐ SPECIAL OF THE WEEK: "The #31" runs every day. Edit desc/price
-  // below as needed. When the week's over, delete the SPECIAL lines and
-  // un-comment the day-by-day lineup underneath.
-  var SPECIAL = { name: "The #31", desc: "Maple mustard pork tenderloin, bacon-fig jam, black pepper mascarpone. Served with chips or tater salad.", price: "$18", photo: "assets/photos/specials/special_05.webp" };
+  // ⭐ NO SPECIAL RUNNING (Sept 2, 2026). SPECIAL = null hides the
+  // "Today's Special" board on Home + Menu automatically — nothing else
+  // needs touching. To bring a special back, just fill this object in:
+  //   var SPECIAL = { name: "…", desc: "…", price: "$00", photo: "assets/photos/specials/special_06.webp" };
+  // (Last one that ran: "The #31", $18, special_05.webp.)
+  // Or un-comment the day-by-day lineup underneath for a rotating week.
+  var SPECIAL = null;
   var SPECIALS = {
     sunday: SPECIAL, monday: SPECIAL, tuesday: SPECIAL, wednesday: SPECIAL,
     thursday: SPECIAL, friday: SPECIAL, saturday: SPECIAL
@@ -120,6 +123,7 @@ document.addEventListener('DOMContentLoaded', function () {
   // visit. No other changes needed.
   // ---------------------------------------------------------------
   var GALLERY_POOL = [
+    { src: 'assets/photos/specials/special_05.webp', alt: 'The #31 — maple mustard pork tenderloin' },
     { src: 'assets/photos/menu/darcey.webp', alt: 'The Darcy burger' },
     { src: 'assets/photos/menu/wings.webp', alt: 'Toshi Wings' },
     { src: 'assets/photos/menu/cody.webp', alt: 'The Cody crispy chicken sandwich' },
