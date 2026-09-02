@@ -315,6 +315,40 @@ h1, h2, h3, h4 { font-family: var(--font-display); font-weight: 700; line-height
 }
 .menu-note { font-size: .9rem; color: var(--muted); font-style: italic; }
 
+/* ---------- Drinks ---------- */
+.menu-divider { display: flex; align-items: center; gap: 18px; margin: 58px 0 46px; }
+.menu-divider::before, .menu-divider::after { content: ""; flex: 1; height: 2px; background: linear-gradient(90deg, transparent, var(--ember)); }
+.menu-divider::after { background: linear-gradient(90deg, var(--ember), transparent); }
+.menu-divider span {
+  font-family: var(--font-sign); font-weight: 600; text-transform: uppercase;
+  letter-spacing: .18em; font-size: 1.35rem; color: var(--ember); white-space: nowrap;
+}
+.drink-list { display: grid; grid-template-columns: 1fr 1fr; gap: 0 48px; }
+.drink-item {
+  display: grid; grid-template-columns: 1fr auto; gap: 3px 18px;
+  align-items: baseline; align-content: start; padding: 15px 0; border-bottom: 1px dashed var(--line);
+}
+.drink-item__name { font-family: var(--font-display); font-size: 1.1rem; font-weight: 700; color: var(--charcoal); }
+.drink-item__price { font-family: var(--font-display); font-size: 1.1rem; font-weight: 700; color: var(--burgundy); white-space: nowrap; }
+.drink-item__price i { font-style: normal; font-size: .68em; font-weight: 500; color: var(--muted); letter-spacing: .04em; }
+.drink-item__desc { grid-column: 1 / -1; color: var(--muted); font-size: .94rem; }
+.drink-row { display: flex; align-items: baseline; gap: 20px; padding: 16px 0; border-bottom: 1px dashed var(--line); flex-wrap: wrap; }
+.drink-row__label {
+  font-family: var(--font-sign); font-weight: 600; text-transform: uppercase; letter-spacing: .1em;
+  font-size: .95rem; color: var(--burgundy); white-space: nowrap; min-width: 92px;
+}
+.drink-tags { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 8px; }
+.drink-tags li {
+  font-size: .88rem; color: var(--charcoal); background: rgba(45,42,38,.04);
+  border: 1px solid var(--line); border-radius: 999px; padding: 5px 13px;
+}
+@media (max-width: 700px) {
+  .drink-list { grid-template-columns: 1fr; gap: 0; }
+  .menu-divider span { font-size: 1.15rem; letter-spacing: .14em; }
+  .drink-row { gap: 8px 16px; }
+  .drink-row__label { min-width: 0; width: 100%; }
+}
+
 /* ---------- Info / two-column ---------- */
 .split { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; align-items: center; }
 @media (max-width: 860px) { .split { grid-template-columns: 1fr; gap: 32px; } }
