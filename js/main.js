@@ -143,7 +143,7 @@ document.addEventListener('DOMContentLoaded', function () {
     }
     var galleryPicks = galleryPool.slice(0, 6);
     galleryGrid.innerHTML = galleryPicks.map(function (p) {
-      return '<div class="gallery__item"><img src="' + p.src + '" data-fallback="assets/logos/salt-n-fire-final.png" loading="lazy" alt="' + p.alt.replace(/"/g, '&quot;') + '"></div>';
+      return '<div class="gallery__item"><img src="' + p.src + '" data-fallback="assets/logos/logo.svg" loading="lazy" alt="' + p.alt.replace(/"/g, '&quot;') + '"></div>';
     }).join('');
     wireFallbackPhotos(galleryGrid);
   }
