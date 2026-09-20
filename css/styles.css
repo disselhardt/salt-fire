@@ -547,8 +547,15 @@ input:focus-visible, [tabindex]:focus-visible, iframe:focus-visible {
 .tt-o { color: #FF6B35; } .tt-y { color: #FFC72C; }
 .partner-tt__body { padding: 28px 30px 30px; text-align: center; display: flex; flex-direction: column; align-items: center; flex: 1; justify-content: center; }
 .partner-tt__tagline { font-family: "Poppins", system-ui, sans-serif; font-weight: 600; font-size: 1.35rem; line-height: 1.25; color: #fafafa; }
-.partner-tt__copy { color: #a1a1aa; font-size: 1.08rem; line-height: 1.55; margin-top: 10px; max-width: 420px; }
-.partner-tt__free { color: #FFC72C; font-weight: 600; font-size: 1.08rem; margin-top: 12px; }
+.partner-tt__copy { color: #a1a1aa; font-size: 1.05rem; line-height: 1.55; margin-top: 14px; max-width: 430px; }
+.partner-tt__free { color: #FFC72C; font-weight: 600; font-size: 1.08rem; margin-top: 4px; }
+.tt-golf { display: flex; align-items: flex-start; gap: 11px; text-align: left; margin-top: 16px; padding: 12px 16px; border: 1px solid rgba(255,199,44,.38); border-radius: 12px; background: rgba(255,107,53,.08); max-width: 430px; }
+.tt-golf svg { flex: none; margin-top: 3px; }
+.tt-golf p { color: #f0e6d2; font-size: 1rem; line-height: 1.45; }
+.tt-golf b { color: #FFC72C; font-weight: 600; }
+.tt-modes { list-style: none; display: flex; flex-wrap: wrap; justify-content: center; gap: 8px; margin: 16px 0 0; padding: 0; }
+.tt-modes li { font-family: "Poppins", system-ui, sans-serif; font-size: .78rem; font-weight: 600; letter-spacing: .04em; text-transform: uppercase; color: #FFC72C; padding: 5px 14px; border-radius: 999px; border: 1px solid rgba(255,199,44,.4); }
+.partner-tt__count { color: #a1a1aa; font-size: 1.02rem; margin-top: 16px; }
 .partner-tt__stores { display: flex; flex-wrap: wrap; justify-content: center; gap: 12px; margin-top: 20px; }
 .tt-store { display: inline-flex; align-items: center; gap: 12px; min-width: 190px; padding: 10px 20px; border-radius: 12px; background: #000; border: 1px solid #3f3f46; color: #fafafa; text-align: left; line-height: 1.2; transition: border-color .15s ease; }
 .tt-store:hover, .tt-store:focus-visible { border-color: #FFC72C; }
